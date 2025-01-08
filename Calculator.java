@@ -15,5 +15,6 @@ public class Calculator{
         }
         System.out.println("1부터 100까지의 짝수 합은 : " + sum);
     } //왜안돼
+    //이제된다
 }
 
