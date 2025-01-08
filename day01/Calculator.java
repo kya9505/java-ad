@@ -1,4 +1,4 @@
-import java.util.Scanner;
+package day01;
 
 public class Calculator{
     public static void main(String[] args) {
