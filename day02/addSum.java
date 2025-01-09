@@ -19,6 +19,6 @@ public class addSum {
     public static void addSum(int sum){
         int Val2 =  S.nextInt();
         sum += Val2;
-        System.out.println(sum);
+        System.out.println(sum); //
     }
 }
