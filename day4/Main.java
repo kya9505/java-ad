@@ -13,7 +13,7 @@ public class Main {
     a = a + 100;
     b = b % 10 ;
 
-        System.out.printf("%d %d", a,b);ss
+        System.out.printf("%d %d", a,b);
 
 
     }
