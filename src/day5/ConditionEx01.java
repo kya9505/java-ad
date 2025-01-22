@@ -9,7 +9,7 @@ public class ConditionEx01 {
         } else {
             System.out.println("이 문장은 if문 외부에 있습니다.");
         }
-
+//
         if (num < 50) {
             System.out.println("숫자가 50보다 작습니다.");
         } else {
