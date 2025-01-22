@@ -15,5 +15,25 @@ public class Service {
         Printer.println(true);
         Printer.println(5.7);
         Printer.println("홍길동");
+
+        ShopService obj1 = ShopService.getInstance();
+        ShopService obj2 = ShopService.getInstance();
+
+        if(obj1 == obj2){
+            System.out.println("같은 ShopService 객체입니다.");
+        }else {
+            System.out.println("다른 Shopservice 객체입니다. ");
+        }
+
+        Account account = new Account();
+
+        account.setBalance(10000);
+        System.out.println("현재잔고 : "+account.getBalance());
+       account.setBalance(-100);
+        System.out.println("현재잔고 : "+account.getBalance());
+       account.setBalance(2000000);
+        System.out.println("현재잔고 : "+account.getBalance());
+       account.setBalance(300000);
+        System.out.println("현재잔고 : "+account.getBalance());
     }
 }
