@@ -24,7 +24,7 @@ public class Movie2 {
             for (int j = 0; j < 3; j++) {
                 System.out.print(tmp[j] + movieArray[i][j] + "|");
             }
-            System.out.println();
+            System.out.println();//
         }
     }
 }
