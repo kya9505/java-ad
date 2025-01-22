@@ -1,6 +1,6 @@
 package src.day11;
 
-import java.util.Scanner;
+import java.util.Scanner;//
 
 public class Movie2 {
     public static void main(String[] args) {
