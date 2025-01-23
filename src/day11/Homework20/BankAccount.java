@@ -19,7 +19,7 @@ public class BankAccount {
             System.out.print("선택> ");
             int num = sc.nextInt();
             sc.nextLine();
-
+//
             switch (num) {
                 case 1:
                     if (cnt > 1) {
