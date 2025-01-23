@@ -1,6 +1,6 @@
 package day10.car;
 
-import src.car.CarDAO;
+import car.CarDAO;
 
 public class CarMain {
     public static void main(String[] args) {

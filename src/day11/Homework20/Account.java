@@ -1,16 +1,36 @@
 package day11.Homework20;
 
-public class AccountDAO {
+public class Account {
+    private String accnum;
+    private String name;
+    private int cash;
 
-    AccountDTO accnum = new AccountDTO();
-    AccountDTO name = new AccountDTO();
-    AccountDTO cash = new AccountDTO();
 
-    public AccountDAO(AccountDTO accnum, AccountDTO name, AccountDTO cash) {
+
+    public void setAccnum(String accnum) {
         this.accnum = accnum;
+    }
+
+    public void setName(String name) {
         this.name = name;
+    }
+
+    public void setCash(int cash) {
         this.cash = cash;
     }
+
+    public String getAccnum() {
+        return accnum;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getCash() {
+        return cash;
+    }
+
 
     public void menu(){
         System.out.println("*".repeat(50));
@@ -22,6 +42,4 @@ public class AccountDAO {
         System.out.println(menu);
         System.out.println("-".repeat(10));
     }
-
-
 }

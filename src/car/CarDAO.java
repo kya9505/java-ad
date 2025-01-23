@@ -1,6 +1,6 @@
-package src.car;
+package car;
 
-import src.day10.car.CarDTO;
+import day10.car.CarDTO;
 
 public class CarDAO {
     CarDTO car = new CarDTO();
