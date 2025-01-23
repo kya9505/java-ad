@@ -1,5 +1,6 @@
 package day12.inher;
 
+
 class Parent{
     int field;
     void method(){
