@@ -11,6 +11,7 @@ public class BankAccount {
 
         boolean A = true;
         int cnt = 0;
+        boolean Boo = false;
 
 
         while (A) {
@@ -37,8 +38,6 @@ public class BankAccount {
                         sc.nextLine();
                     }
                     break;
-
-
                 case 2:
                     account.menucall("계좌목록");
                     if (cnt == 0) System.out.println("생성된 계좌가 없습니다.");
@@ -50,11 +49,15 @@ public class BankAccount {
 
                 case 3:
                     account.menucall("예금");
-                    boolean Boo = false;
-                    System.out.print("계좌번호 : ");
+                    if (cnt == 0) {
+                        System.out.println("등록된 계좌가 없습니다.");
+                        break;
+                    }
+                    System.out.print("예금할 계좌번호 : ");
                     String accnum = sc.nextLine();
-                    for (int i = 0; i < cnt; i++) {
-                        if (Account[i].getAccnum().equals(accnum)) {
+
+                    for (int i = 0; i < Account.length; i++) {
+                        if (Account[i] != null &&Account[i].getAccnum().equals(accnum)) {
                             System.out.print("예금할 금액 : ");
                             int cashadd = sc.nextInt();
                             Account[i].setCash(Account[i].getCash() + cashadd);
@@ -64,12 +67,48 @@ public class BankAccount {
                             break;
                         }
                     }
-                    if (!Boo) {
+                    if ( !Boo){
                         System.out.println("해당 계좌가 존재하지 않습니다.");
+                        break;
                     }
                     break;
 
+                case 4:
+                    account.menucall("출금");
+                    if (cnt == 0) {
+                        System.out.println("등록된 계좌가 없습니다.");
+                        break;
+                    }
+                    System.out.print("출금할 계좌번호 : ");
+                    String accnum2 = sc.nextLine();
+                    for (int i = 0; i < Account.length; i++) {
+                        if (Account[i].getAccnum().equals(accnum2)) {
+                            System.out.print("출금액 : ");
+                            int cashout = sc.nextInt();
+                            if ((Account[i].getCash() - cashout) <= 0) {
+                                System.out.println("잔액이 부족합니다.");
+                                break;
+                            } else {
+                                Account[i].setCash(Account[i].getCash() - cashout);
+                                System.out.println("출금이 완료되었습니다. \n현재 총 금액 : " + Account[i].getCash());
+                                Boo = true;
+                                sc.nextLine();
+                                break;
+                            }
+                        }
+
+                    }
+                    if (!Boo){
+                        System.out.println("해당 계좌가 존재하지않습니다.");
+                        break;
+                    }
+                    break;
+                case 5 :
+                    System.out.println("프로그램을 종료합니다. ");
+                    A=false;
+                    break;
             }
+
         }
     }
 }
