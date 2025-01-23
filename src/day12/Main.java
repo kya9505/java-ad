@@ -1,20 +1,21 @@
-package day11;
+package day12;
 
-import java.awt.dnd.DragSource;
 import java.util.Scanner;
 
 class Calculation{
+    int a;
+    int b;
 
-    public void addition(int a,int b){
+    public void addition(){
         System.out.println(a+b);
     }
-    public void subtraction(int a, int b){
+    public void subtraction(){
         System.out.println(a-b);
     }
 }
 
 class Inheritance01 extends Calculation{
-    public void multipl(int a, int b){
+    public void multipl(){
         System.out.println(a*b);
     }
 
@@ -25,11 +26,11 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         Inheritance01 obj = new Inheritance01();
 
-        int a = sc.nextInt();
-        int b = sc.nextInt();
+        obj.a = sc.nextInt();
+        obj.b = sc.nextInt();
 
-        obj.addition(a,b);
-        obj.subtraction(a,b);
-        obj.multipl(a,b);
+        obj.addition();
+        obj.subtraction();
+        obj.multipl();
     }
 }

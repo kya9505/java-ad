@@ -1,4 +1,4 @@
-package src.day9;
+package day9;
 
 public class CalculateMethod {
     public static void calculate(int x,int y){

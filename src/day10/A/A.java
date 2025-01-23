@@ -1,4 +1,4 @@
-package src.day10.A;
+package day10.A;
 
 public class A {
     //필드

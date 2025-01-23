@@ -1,4 +1,4 @@
-package src.day9.BookMaket;
+package day9.BookMaket;
 
 public class CartItem {
     private String[] itemBook = new String[7];

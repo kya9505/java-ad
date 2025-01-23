@@ -1,5 +1,5 @@
-package day11.Homwork;
 
+package day11.Homwork;
 //17
 public class Printer {
     public int Int;

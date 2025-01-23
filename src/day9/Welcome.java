@@ -120,7 +120,6 @@ public class Welcome {
                             mBookList[i][0] = book[numId][1];
                             break;
                         }
-
                     }
                     quit = true;
                 }

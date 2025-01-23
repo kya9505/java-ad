@@ -1,4 +1,4 @@
-package src.day9;
+package day9;
 
 public class CatMain {
     public static void main(String[] args) {

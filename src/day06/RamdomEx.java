@@ -1,4 +1,4 @@
-package src.day06;
+package day06;
 import java.util.Random;
 public class RamdomEx {
     public static void main(String[] args) {

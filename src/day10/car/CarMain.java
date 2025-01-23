@@ -1,4 +1,4 @@
-package src.day10.car;
+package day10.car;
 
 import src.car.CarDAO;
 

@@ -1,4 +1,4 @@
-package src.day9;
+package day9;
 
 class ParentCat {
     public  String breed = "샴 고양이";

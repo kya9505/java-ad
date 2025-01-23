@@ -1,4 +1,4 @@
-package src.day10;
+package day10;
 
 import src.day10.DTO.PersonDTO;
 

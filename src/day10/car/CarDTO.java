@@ -1,4 +1,4 @@
-package src.day10.car;
+package day10.car;
 
 public class CarDTO {
     private String model;

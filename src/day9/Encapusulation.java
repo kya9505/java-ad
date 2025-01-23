@@ -1,4 +1,4 @@
-package src.day9;
+package day9;
 
 public class Encapusulation {
    private String name = "고윤아";

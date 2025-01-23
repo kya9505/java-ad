@@ -1,4 +1,4 @@
-package src.day11.Level9;
+package day11.Level9;
 
 public class CarPrivate {
     private int num;

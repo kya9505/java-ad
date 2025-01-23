@@ -1,4 +1,4 @@
-package src.day9;
+package day9;
 public class MethodEx {
 
     public static String method(int num) {

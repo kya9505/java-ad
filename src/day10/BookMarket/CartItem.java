@@ -1,4 +1,4 @@
-package src.day10.BookMarket;
+package day10.BookMarket;
 
 public class CartItem {
     private String[] itemBook = new String[7];

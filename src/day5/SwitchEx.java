@@ -1,4 +1,4 @@
-package src.day5;
+package day5;
 
 public class SwitchEx {
     public static void main(String[] args) {

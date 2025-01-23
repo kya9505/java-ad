@@ -1,4 +1,4 @@
-package src.day8;
+package day8;
 
 public class MultiArray {
     public static void main(String[] args) {

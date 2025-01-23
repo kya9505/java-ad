@@ -1,4 +1,4 @@
-package src.day4;
+package day4;
 
 public class CompareOperatorEx {
     public static void main(String[] args) {

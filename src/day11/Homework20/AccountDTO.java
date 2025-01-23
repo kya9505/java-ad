@@ -1,6 +1,6 @@
 package day11.Homework20;
 
-public class Account {
+public class AccountDTO {
     private String accnum;
     private String name;
     private int cash;
@@ -31,15 +31,5 @@ public class Account {
         return cash;
     }
 
-    public void menu(){
-        System.out.println("*".repeat(50));
-        System.out.println("1.계좌생성 | 2.계좌목록 | 3.예금 | 4.출금 | 5.종료");
-        System.out.println("*".repeat(50));
-    }
-    public void menucall(String A){
-        System.out.println("-".repeat(10));
-        System.out.println(A);
-        System.out.println("-".repeat(10));
-    }
 
 }

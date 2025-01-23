@@ -1,4 +1,4 @@
-package src.day02;
+package day02;
 
 public class FourArithmetic {
     public static void main(String[] args) {
